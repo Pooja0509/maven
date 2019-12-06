@@ -634,13 +634,15 @@ under the License.
 					<goal>prepare-agent</goal>
 				</goals>
 			</execution>
+			<!-- attached to Maven test phase -->
 			<execution>
-				<id>jacoco-report</id>
+				<id>report</id>
 				<phase>test</phase>
 				<goals>
 					<goal>report</goal>
 				</goals>
 			</execution>
+
 			<!-- Add this checking -->
 			<execution>
 				<id>jacoco-check</id>
@@ -671,6 +673,7 @@ under the License.
 
 		</executions>
 	</plugin>
+			
 
 
 		</plugins>
